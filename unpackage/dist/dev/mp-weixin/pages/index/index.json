@@ -1,0 +1,8 @@
+{
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "mescroll-body": "/uni_modules/mescroll-uni/components/mescroll-body/mescroll-body",
+    "hello-comp": "/components/helloComp",
+    "trailer-stars": "/components/trailerStars"
+  }
+}
