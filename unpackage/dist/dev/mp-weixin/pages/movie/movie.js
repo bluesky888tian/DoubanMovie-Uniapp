@@ -143,7 +143,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var trailerStars = function trailerStars() {
   __webpack_require__.e(/*! require.ensure | components/trailerStars */ "components/trailerStars").then((function () {
-    return resolve(__webpack_require__(/*! ../../components/trailerStars.vue */ 150));
+    return resolve(__webpack_require__(/*! ../../components/trailerStars.vue */ 143));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var _default = {
@@ -158,19 +158,19 @@ var _default = {
     };
   },
   // 页面初次渲染完成，获得视频上下文对象
-  onReady: function onReady() {
-    this.videoContext = uni.createVideoContext('myTrailer');
-  },
-  onHide: function onHide() {
-    // 页面被隐藏的时候，暂停播放
-    this.videoContext.pause();
-  },
-  onShow: function onShow() {
-    // 页面被再次显示的时候，可以继续播放
-    // 			if (this.videoContext) {
-    // 				this.videoContext.play();
-    // 			}
-  },
+  /*	onReady() {
+  		this.videoContext = uni.createVideoContext('myTrailer');
+  	},
+  	onHide() {
+  		// 页面被隐藏的时候，暂停播放
+  		this.videoContext.pause();
+  	},
+  	onShow() {
+  		// 页面被再次显示的时候，可以继续播放
+  // 			if (this.videoContext) {
+  // 				this.videoContext.play();
+  // 			}
+  	},*/
   onLoad: function onLoad(params) {
     var me = this;
     // 获取上一个页面传入的参数

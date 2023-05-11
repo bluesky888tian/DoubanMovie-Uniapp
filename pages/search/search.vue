@@ -138,6 +138,13 @@
 				}
 			});
 		},
+		onShareAppMessage(res) {
+			var me = this;
+			return {
+				title:'电影小程序',
+				path:'/pages/index/index'
+			}
+		},
 		onReachBottom() {
 			var me = this;
 			

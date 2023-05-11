@@ -152,7 +152,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 var trailerStars = function trailerStars() {
   __webpack_require__.e(/*! require.ensure | components/trailerStars */ "components/trailerStars").then((function () {
-    return resolve(__webpack_require__(/*! ../../components/trailerStars.vue */ 150));
+    return resolve(__webpack_require__(/*! ../../components/trailerStars.vue */ 143));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var _default = {
@@ -208,6 +208,13 @@ var _default = {
         uni.hideLoading();
       }
     });
+  },
+  onShareAppMessage: function onShareAppMessage(res) {
+    var me = this;
+    return {
+      title: '电影小程序',
+      path: '/pages/index/index'
+    };
   },
   onReachBottom: function onReachBottom() {
     var me = this;

@@ -65,7 +65,6 @@
 	// import common from "../../common/common.js";
 	// 导入自定义组件
 	import MescrollMixin from "@/uni_modules/mescroll-uni/components/mescroll-uni/mescroll-mixins.js";
-	import helloComp from "../../components/helloComp.vue";
 	import trailerStars from "../../components/trailerStars.vue";
 
 	export default {
@@ -125,7 +124,15 @@
 			
 				//刷新页面
 		//	me.refresh();
+		
 			
+		},
+		onShareAppMessage(res) {
+			var me = this;
+			return {
+				title:'电影小程序',
+				path:'/pages/index/index'
+			}
 		},
 		methods: {
 			upCallback(page) {
@@ -239,7 +246,6 @@
 		},
 
 		components: {
-			helloComp,
 			trailerStars
 		}
 	}

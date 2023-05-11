@@ -137,7 +137,7 @@
 			};
 		},
 		// 页面初次渲染完成，获得视频上下文对象
-		onReady() {
+	/*	onReady() {
 			this.videoContext = uni.createVideoContext('myTrailer');
 		},
 		onHide() {
@@ -149,7 +149,7 @@
 // 			if (this.videoContext) {
 // 				this.videoContext.play();
 // 			}
-		},
+		},*/
 		onLoad(params) {
 			var me = this;
 			// 获取上一个页面传入的参数

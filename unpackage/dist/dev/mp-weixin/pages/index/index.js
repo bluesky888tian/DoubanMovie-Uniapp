@@ -231,14 +231,9 @@ var _mescrollMixins = _interopRequireDefault(__webpack_require__(/*! @/uni_modul
 //
 // import common from "../../common/common.js";
 // 导入自定义组件
-var helloComp = function helloComp() {
-  __webpack_require__.e(/*! require.ensure | components/helloComp */ "components/helloComp").then((function () {
-    return resolve(__webpack_require__(/*! ../../components/helloComp.vue */ 143));
-  }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
-};
 var trailerStars = function trailerStars() {
   __webpack_require__.e(/*! require.ensure | components/trailerStars */ "components/trailerStars").then((function () {
-    return resolve(__webpack_require__(/*! ../../components/trailerStars.vue */ 150));
+    return resolve(__webpack_require__(/*! ../../components/trailerStars.vue */ 143));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var _default = {
@@ -286,7 +281,13 @@ var _default = {
     //刷新页面
     //	me.refresh();
   },
-
+  onShareAppMessage: function onShareAppMessage(res) {
+    var me = this;
+    return {
+      title: '电影小程序',
+      path: '/pages/index/index'
+    };
+  },
   methods: {
     upCallback: function upCallback(page) {
       var _this = this;
@@ -390,7 +391,6 @@ var _default = {
     }
   },
   components: {
-    helloComp: helloComp,
     trailerStars: trailerStars
   }
 };

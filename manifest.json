@@ -1,6 +1,6 @@
 {
-    "name" : "next-superhero-dev",
-    "appid" : "__UNI__C980F1E",
+    "name" : "movie",
+    "appid" : "__UNI__6A61B0C",
     "description" : "",
     "versionName" : "1.0.0",
     "versionCode" : "100",
@@ -75,7 +75,6 @@
     "quickapp" : {},
     /* 快应用特有相关 */
     "mp-weixin" : {
-        /* 小程序特有相关 */
         "appid" : "wx5e4ccfcaeb594657",
         "setting" : {
             "urlCheck" : false,
